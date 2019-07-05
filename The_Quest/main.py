@@ -66,3 +66,4 @@ else:
     for option in shopOptions:
         print(option)
     state = input()
+# test
