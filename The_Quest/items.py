@@ -1,20 +1,20 @@
 class Wallet:
 
-    def __init__ (self):
+    def __init__(self):
         self.maxBalance = 500
         self.currBalance = 0
 
 
 class Sword:
 
-    def __init__  (self):
+    def __init__(self):
         self.cost = 50
         self.attack = 2
 
 
 class Shield:
 
-    def __init__ (self):
+    def __init__(self):
         self.cost = 60
         self.defense = 5
 

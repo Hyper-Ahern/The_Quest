@@ -1,6 +1,6 @@
 # Bob's Item Shop
 
-from Items import Wallet
+from items import Wallet
 shop = {'Sword': 50, "Shield": 60, "Potion": 20}
 shopOptions = {"Buy": 0, "Sell": 1, "Exit": 2}
 masonWallet = Wallet()
@@ -19,7 +19,7 @@ while state in shopOptions:
 
     if operation == 0:
         for item, price in shop.items():
-            print(item,":", price)
+            print(item, ":", price)
         print('Exit')
 
         print("What would you like?")
@@ -27,7 +27,6 @@ while state in shopOptions:
 
         while choice in shop:
             price = shop[choice]
-            # print(price)
             if masonWallet.currBalance >= price:
                 masonWallet.currBalance -= price
                 print("You have purchased", choice)
