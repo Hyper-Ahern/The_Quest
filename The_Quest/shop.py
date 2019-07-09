@@ -1,6 +1,6 @@
 # Bob's Item Emporium
 
-from Items import Wallet
+from items import Wallet
 
 shop = {'Sword': 50, "Shield": 60, "Potion": 20}
 shopOptions = {"Buy": 0, "Sell": 1, "Exit": 2}
@@ -72,4 +72,4 @@ while state != 2:
         if choice == "Back":
             state = ''
 print("Thank you, have a spectacular day!")
-exit()
+exit(0)
