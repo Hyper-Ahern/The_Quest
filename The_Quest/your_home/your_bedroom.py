@@ -25,5 +25,6 @@ while option != 0:
     for key in wake_up_options:
         if option in wake_up_options:
             option = wake_up_options[option]
-        # else:
-        #     option = 4
+            break
+        else:
+            option = 4
