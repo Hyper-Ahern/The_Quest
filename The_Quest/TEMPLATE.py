@@ -1,5 +1,6 @@
-# Your Hallway
-import os
+# TEMPLATE FOR NEW PLACES
+# Modify variables with main."variable here" = "value"
+# Access variables with main."variable here"
 
 
 def run():
@@ -7,9 +8,7 @@ def run():
     options = {"look around": 1, "look": 1, "check": 1, "leave": 2, "shop": 2}
     global_options = {"pick nose": "don't pick your nose"}
 
-    # print(main.testvar)
-    # main.testvar = 5
-    print("You enter the hallway...What do you do?")
+    print("You wake up...What do you do?")
     option = input()
 
     for key in options:
@@ -17,16 +16,16 @@ def run():
             option = options[option]
             break
         else:
-            option = 4
+            option = 99
 
     while option != 0:
         if option == 1:
-            print("This is the hallway you see pictures")
+            print("You look.")
         elif option == 2:
-            print("You leave the hallway and continue on your way to the local shop.")
-            return 3
-        elif option == 4:
-            print("You can't do that!!")
+            print("You leave.")
+            return 2
+        elif option == 99:
+            print("You can't do that. Try something else.")
 
         print("What do you do?")
         option = input()
@@ -36,5 +35,4 @@ def run():
                 option = options[option]
                 break
             else:
-                option = 4
-
+                option = 99
