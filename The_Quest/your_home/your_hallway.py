@@ -1,32 +1,24 @@
 # Your Hallway
-import os
 
 
 def run():
     import main
-    options = {"look around": 1, "look": 1, "check": 1, "leave": 2, "shop": 2}
-    global_options = {"pick nose": "don't pick your nose"}
+    import variables
 
-    # print(main.testvar)
-    # main.testvar = 5
-    print("You enter the hallway...What do you do?")
-    option = input()
-
-    for key in options:
-        if option in options:
-            option = options[option]
-            break
-        else:
-            option = 4
+    options = {"look": 1, "check": 1, "leave": 2, "walk out": 2}
+    option = -1
 
     while option != 0:
-        if option == 1:
-            print("This is the hallway you see pictures")
+        if option == -1:
+            print("You enter the hallway.")
+        elif option == 1:
+            print("You see pictures on the wall. Will you inspect further?")
+            pictures()
         elif option == 2:
-            print("You leave the hallway and continue on your way to the local shop.")
+            print("You leave.")
             return 3
-        elif option == 4:
-            print("You can't do that!!")
+        elif option == 99:
+            print("You can't do that. Try something else.")
 
         print("What do you do?")
         option = input()
@@ -36,5 +28,20 @@ def run():
                 option = options[option]
                 break
             else:
-                option = 4
+                option = 99
 
+
+def pictures():
+    picture_choice = "temp"
+    while picture_choice != "yes" or "no":
+        picture_choice = input()
+        if picture_choice == "yes":
+            print("You see a picture that you don't recognize. Where did this come from?")
+            print("You return your attention to the rest of the hallway.")
+            return
+        elif picture_choice == "no":
+            print("You look away")
+            print("You return your attention to the rest of the hallway.")
+            return
+        else:
+            print("You need to make a choice, yes or no.")

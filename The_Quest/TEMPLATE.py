@@ -1,25 +1,17 @@
 # TEMPLATE FOR NEW PLACES
-# Modify variables with main."variable here" = "value"
-# Access variables with main."variable here"
 
 
 def run():
     import main
-    options = {"look around": 1, "look": 1, "check": 1, "leave": 2, "shop": 2}
-    global_options = {"pick nose": "don't pick your nose"}
+    import variables
 
-    print("You wake up...What do you do?")
-    option = input()
-
-    for key in options:
-        if option in options:
-            option = options[option]
-            break
-        else:
-            option = 99
+    options = {"look": 1, "check": 1, "leave": 2, "walk out": 2}
+    option = -1
 
     while option != 0:
-        if option == 1:
+        if option == -1:
+            print("Insert place description here.")
+        elif option == 1:
             print("You look.")
         elif option == 2:
             print("You leave.")

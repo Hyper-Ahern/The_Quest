@@ -24,3 +24,10 @@ class Potion:
     def __init__(self):
         self.cost = 20
         self.health = 10
+
+
+class Armor:
+
+    def __init__(self):
+        self.cost = 40
+        self.defense = 8
