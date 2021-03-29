@@ -11,9 +11,7 @@ public abstract class Shields extends Armor {
   }
 
   public void showStats() {
-    System.out.println("Item: " + this.getName());
-    System.out.println("Durability: " + this.getDurability());
-    System.out.println("Block: " + this.getBlock());
-    System.out.println("Defence: " + this.getDefence()+ "\n");
+    super.showStats();
+    System.out.println("Block: " + this.getBlock() + "\n");
   }
 }

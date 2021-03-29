@@ -9,4 +9,10 @@ public abstract class Armor extends Equipment implements ItemStats{
   public int getDefence() {
     return defence;
   }
+
+  public void showStats() {
+    super.showStats();
+    System.out.println("Defense: " + this.getDefence());
+  }
+
 }

@@ -10,7 +10,4 @@ public class BroadSword extends Sword implements ItemStats {
     this.setName("Broad Sword");
     this.setDamageType(damageType);
   }
-
-
-
 }

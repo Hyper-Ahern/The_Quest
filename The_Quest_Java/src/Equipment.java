@@ -9,4 +9,9 @@ public class Equipment extends Items {
   public int getDurability() {
     return durability;
   }
+
+  public void showStats() {
+    super.showStats();
+    System.out.println("Durability: " + this.getDurability());
+  }
 }

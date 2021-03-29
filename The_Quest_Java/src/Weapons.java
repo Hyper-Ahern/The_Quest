@@ -20,10 +20,8 @@ public abstract class Weapons extends Equipment {
   }
 
   public void showStats() {
-    System.out.println("Item: " + this.getName());
-    System.out.println("Durability: " + this.getDurability());
+    super.showStats();
     System.out.println("Damage: " + this.getDamage());
-    System.out.println("Damage Type: " + this.getDamageType());
-    System.out.println();
+    System.out.println("Damage Type: " + this.getDamageType() + "\n");
   }
 }
