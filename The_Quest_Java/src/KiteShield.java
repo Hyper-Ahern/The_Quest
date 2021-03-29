@@ -1,4 +1,4 @@
-public class KiteShield extends Shields implements ItemStats {
+public class KiteShield extends Shields {
 
   private String name = "Kite Shield";
   private int durability = 12;
@@ -11,6 +11,7 @@ public class KiteShield extends Shields implements ItemStats {
     this.setDurability(durability);
     this.setDefence(DEFENCE);
     this.setBlock(BLOCK);
+    this.setCost(5);
   }
 
 

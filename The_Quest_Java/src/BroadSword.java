@@ -1,4 +1,4 @@
-public class BroadSword extends Sword implements ItemStats {
+public class BroadSword extends Sword {
 
 //  private final String name = "Broad Sword";
   private final int damage = 5;
@@ -9,5 +9,6 @@ public class BroadSword extends Sword implements ItemStats {
     this.setDurability(durability);
     this.setName("Broad Sword");
     this.setDamageType(damageType);
+    this.setCost(5);
   }
 }
