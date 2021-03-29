@@ -13,11 +13,6 @@ public class KiteShield extends Shields implements ItemStats {
     this.setBlock(BLOCK);
   }
 
-  public void showStats() {
-    System.out.println("Item: " + this.getName());
-    System.out.println("Durability: " + this.getDurability());
-    System.out.println("Block: " + this.getBlock());
-    System.out.println("Defence: " + this.getDefence());
-  }
+
 
 }

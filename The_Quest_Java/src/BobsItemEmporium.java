@@ -4,13 +4,11 @@ public class BobsItemEmporium  {
 
   public static void main (String [] args) {
 
+    KiteShield shield = new KiteShield();
+    shield.showStats();
 
-    KiteShield a1 = new KiteShield();
-//    a1.setDurability(5);
-
-    System.out.println(a1.getDurability());
-    System.out.println(a1.getBlock());
-    a1.showStats();
+    BroadSword sword = new BroadSword();
+    sword.showStats();
 
   }
 }

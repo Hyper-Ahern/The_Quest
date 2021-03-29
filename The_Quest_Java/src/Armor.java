@@ -1,4 +1,4 @@
-public abstract class Armor extends Items {
+public abstract class Armor extends Equipment implements ItemStats{
 
   private int defence;
 

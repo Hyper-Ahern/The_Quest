@@ -1,4 +1,5 @@
-//public class Sword extends Weapons{
-//
-//
-//}
+public abstract class Sword extends Weapons implements ItemStats{
+
+  protected String damageType = "Slashing";
+
+}
